@@ -5,9 +5,7 @@ from fastapi.testclient import TestClient
 # Import your FastAPI app
 import sys
 import os
-
-# Add source code path to Python sys.path
-sys.path.append(r"D:\SEL\CICD2\src_code")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src_code')))
 
 from p1 import api  # import the FastAPI instance
 
